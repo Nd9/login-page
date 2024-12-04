@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: url('https://source.unsplash.com/random/1920x1080') no-repeat center center/cover;
+      color: white;
+    }
+
+    .signup-card {
+      background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+      border: 1px solid rgba(255, 255, 255, 0.3); /* Light border */
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px); /* Frosted glass effect */
+      -webkit-backdrop-filter: blur(10px); /* Frosted glass for Safari */
+      width: 400px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .signup-card h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .signup-card input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+      background: rgba(255, 255, 255, 0.8);
+      color: #333;
+      font-size: 16px;
+    }
+
+    .signup-card button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #6c63ff;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .signup-card button:hover {
+      background-color: #574fcf;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-card">
+    <h1>Create an Account</h1>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <input type="password" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</body>
+</html>
